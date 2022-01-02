@@ -1,4 +1,5 @@
 # DockerBuild-RaspberryPi-Dnsmasq
+内部向けのDNSサーバ構築する
 RaspberryPiにDockerでDnsmasqをたてる
 
 ## コンテナ起動
