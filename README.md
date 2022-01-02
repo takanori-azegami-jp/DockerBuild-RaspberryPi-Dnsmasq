@@ -2,19 +2,6 @@
 RaspberryPiにDockerでDnsmasqをたてる
 
 ## コンテナ起動
-~~~powershell
-PS C:\>  docker-compose up -d --build
-~~~
-
-## コンテナ接続
-~~~powershell
-#コンテナID取得
-PS C:\>  docker ps 
-#コンテナに接続
-PS C:\>  docker exec -it コンテナID bash
-~~~
-
-## コンテナ起動
 docker-compose.ymlを配置したフォルダに移動して実行
 ~~~powershell
 PS C:\>  docker-compose up -d --build
