@@ -7,14 +7,6 @@ docker-compose.ymlを配置したフォルダに移動して実行
 PS C:\>  docker-compose up -d --build
 ~~~
 
-## コンテナ接続
-~~~powershell
-#コンテナID取得
-PS C:\>  docker ps 
-#コンテナに接続(NAME：python)
-PS C:\>  docker exec -it コンテナID bash
-~~~
-
 ## DNSに問い合わせ
 ~~~console
 C:\>  nslookup hoge1.example.com
