@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  dnsmasq:
+    restart: always
+    image: strm/dnsmasq
+    container_name: dnsmasq
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - $PWD/dnsmasq.conf:/etc/dnsmasq.conf
+      - $PWD/hosts-dnsmasq:/etc/hosts-dnsmasq
