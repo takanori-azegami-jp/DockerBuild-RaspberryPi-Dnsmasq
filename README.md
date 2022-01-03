@@ -9,8 +9,8 @@ PS C:\>  docker-compose up -d --build
 ~~~
 
 ## DNSに問い合わせ
-~~~console
-  $ dig hoge1.example.com
+~~~
+$ dig hoge1.example.com
 ~~~
 
 ## 参考
