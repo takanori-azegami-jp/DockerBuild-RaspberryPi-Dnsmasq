@@ -3,7 +3,7 @@ version: '3'
 services:
   dnsmasq:
     restart: always
-    image: strm/dnsmasq
+    image: 4km3/dnsmasq
     container_name: dnsmasq
     ports:
       - "53:53/udp"
