@@ -10,7 +10,7 @@ PS C:\>  docker-compose up -d --build
 
 ## DNSに問い合わせ
 ~~~console
-C:\>  nslookup hoge1.example.com
+  $ dig hoge1.example.com
 ~~~
 
 ## コンテナとイメージの削除
