@@ -1,21 +1,16 @@
 version: '3.8'
 services:
   dnsmasq:
-  build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: dnsmasq
     restart: always
-    environment:
-      TZ: "Asia/Tokyo"
+    image: jasjeev4/rpi-dnsmasq
+    container_name: dnsmasq
     ports:
-      - "192.168.10.100:53:53/udp"
-      - "192.168.10.100:53:53/tcp"
+      - "53:53/udp"
     dns:
-      - 8.8.8.8
       - 127.0.0.1
+      - 8.8.8.8
     cap_add:
       - NET_ADMIN
     volumes:
+      - /etc/hosts:/etc/hosts
       - $PWD/dnsmasq.conf:/etc/dnsmasq.conf
-      - /etc/hosts:/etc/hosts  #dockerホストの/etc/hostsを共有
