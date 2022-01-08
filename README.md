@@ -15,9 +15,9 @@ $ vi /etc/hosts
 
 ## DNSに問い合わせ
 ~~~
-dig
+digの場合
 $ dig @[DNSホストのIP] ドメイン名
-nslookup
+nslookupの場合
 $ nelookup ドメイン名　[DNSホストのIP]
 ~~~
 
