@@ -10,7 +10,7 @@ PS C:\>  docker-compose up -d --build
 
 ## 名前解決は/etc/hostsで行う
 ~~~
-$ cat /etc/hosts
+$ vi /etc/hosts
 ~~~
 
 ## DNSに問い合わせ
