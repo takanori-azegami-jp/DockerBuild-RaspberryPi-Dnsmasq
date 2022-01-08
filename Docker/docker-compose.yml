@@ -2,7 +2,7 @@ version: '3.8'
 services:
   dnsmasq:
     restart: always
-    image: jasjeev4/rpi-dnsmasq
+    image: jasjeev4/rpi-dnsmasq 
     container_name: dnsmasq
     ports:
       - "53:53/udp"
@@ -10,7 +10,11 @@ services:
       - 127.0.0.1
       - 8.8.8.8
     cap_add:
-      - NET_ADMIN
+      - NET_ADMIN  #必須
     volumes:
-      - /etc/hosts:/etc/hosts
+      - /etc/hosts:/etc/hosts # /etc/hostsと共用
+      - /var/log/dnsmasq.log:/var/log/dnsmasq.log
       - $PWD/dnsmasq.conf:/etc/dnsmasq.conf
+volumes:
+  dnsmasq_data:
+    driver: local
