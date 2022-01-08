@@ -10,7 +10,9 @@ PS C:\>  docker-compose up -d --build
 
 ## DNSに問い合わせ
 ~~~
+dig
 $ dig @[DNSホストのIP] ドメイン名
+nslookup
 $ nelookup ドメイン名　[DNSホストのIP]
 ~~~
 
