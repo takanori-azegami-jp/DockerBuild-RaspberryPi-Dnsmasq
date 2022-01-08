@@ -8,6 +8,11 @@ docker-compose.ymlを配置したフォルダに移動して実行
 PS C:\>  docker-compose up -d --build
 ~~~
 
+## 名前買い解決は/etc/hostsで行う
+~~~
+$ cat /etc/hosts
+~~~
+
 ## DNSに問い合わせ
 ~~~
 dig
