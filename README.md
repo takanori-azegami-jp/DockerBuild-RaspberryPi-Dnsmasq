@@ -4,8 +4,8 @@ RaspberryPiRaspberryPi(32bit)にDockerでDnsmasqを構築
 
 ## コンテナ起動
 docker-compose.ymlを配置したフォルダに移動して実行
-~~~powershell
-PS C:\>  docker-compose up -d --build
+~~~
+$ docker-compose up -d --build
 ~~~
 
 ## 名前解決は/etc/hostsで行う
