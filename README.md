@@ -1,6 +1,6 @@
 # DockerBuild-RaspberryPi-Dnsmasq
 内部向けのDNSサーバ構築する<br>
-RaspberryPiRaspberryPi(32bit)にDockerでDnsmasqを構築
+RaspberryPi(32bit)にDockerでDnsmasqを構築
 
 ## コンテナ起動
 docker-compose.ymlを配置したフォルダに移動して実行
